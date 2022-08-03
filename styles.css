@@ -1,0 +1,110 @@
+.fullpage{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0.5rem;
+}
+
+.header{
+    background-color: rgb(9, 9, 75);
+    text-align: center;
+    color: gold;
+}
+
+.userinput{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    flex-wrap: wrap;
+    font-size: larger;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.startover{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(155, 224, 224);
+    flex-wrap: wrap;
+    font-size: larger;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+#user{
+color: rgb(134, 100, 13);
+}
+
+#comp{
+color: rgb(17, 149, 226);
+}
+
+#res{
+color: coral;
+}
+
+#runonce{
+width: 12em;
+height: 3em;
+font-size:small;
+background-color:rgb(67, 119, 121);
+color:gold;
+font-weight: bolder;
+}
+
+#endgame{
+    width: 12em;
+    height: 3em;
+    font-size:small;
+    background-color:rgb(201, 104, 98);
+    color:gold;
+    font-weight: bolder;
+}
+
+#startover{
+    width: 12em;
+    height: 3em;
+    font-size:small;
+    background-color:rgb(43, 97, 65);
+    color:gold;
+    font-weight: bolder;
+}
+.round{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(208, 245, 245);
+    flex-wrap: wrap;
+    font-size: larger;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.roundend{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(11, 18, 39);
+    flex-wrap: wrap;
+    font-size: larger;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#final{
+    flex-direction: column;
+    background-color: rgb(167, 156, 13);
+    flex-wrap: wrap;
+    font-size: larger;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#final{
+    display: none;
+}

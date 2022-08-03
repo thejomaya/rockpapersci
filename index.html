@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaboom</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+<div class="fullpage">
+
+    <div class="header">
+    <h2>Welcome to Game Zone</h2>
+    <h2> Kaboom </h2>
+    </div>
+    
+    <div class="startover">
+        <button id="startover" onclick="startover();"> Start Over </button>
+    </div>
+        
+    <div class="userinput">
+        <h2> Ongoing Round: <inline id="round1"></inline></h2>
+        
+        <h4> Choose your option </h4>
+        
+        <div class="button">
+        <input type="radio" name="userradio" id="rock" value="Rock" checked="checked">
+        <label>Rock</label>
+        
+        <input type="radio" name="userradio" id="paper" value="Paper">
+        <label>Paper</label>
+        
+        <input type="radio" name="userradio" id="sci" value="Scissors">
+        <label >Scissors &emsp14;</label> 
+        </div>
+
+        <br>
+
+        <button id="runonce" onclick="runonce();"> Shoot for Round 1</button>
+    </div>
+
+<div class="round">
+ <h3> In Round <inline id="round2"></inline>,</h3>
+ <h4 id="user"> You chose: <inline id="userchoice"> </inline></h4>
+ <h4 id="comp"> Computer chose: <inline id="computerchoice"> </inline></h4>
+ <h4 id="res"> Outcome of round <inline id="round5"></inline> is :<inline id="result"></inline> </h4>
+ <br>
+</div>
+
+ <div class="roundend">
+ <h4 id="res"> At the end of Round <inline id="round3"></inline>,</h4>
+ <h4 id="user"> Your Score: <inline id="userscore"> </inline></h4>
+ <h4 id="comp"> Computer' Score: <inline id="compscore"> </inline></h4>
+ <br>
+ <button id="endgame" onclick="endgame();">End the game</button>
+ </div>
+
+ <div id="final">
+ <h3 id="finalresult"> Game over!<br><br><inline id="resultsum"></inline><br><br> Outcome of the <inline id="round4"></inline> round game is : <inline id="overallresult"></inline> </h3>
+ </div>
+ 
+ <script src="game.js"></script>
+
+</div> 
+</body>
+</html>
