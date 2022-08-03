@@ -41,7 +41,7 @@
         <button id="runonce" onclick="runonce();"> Shoot for Round 1</button>
     </div>
 
-<div class="round">
+<div id="row2" class="round">
  <h3> In Round <inline id="round2"></inline>,</h3>
  <h4 id="user"> You chose: <inline id="userchoice"> </inline></h4>
  <h4 id="comp"> Computer chose: <inline id="computerchoice"> </inline></h4>
@@ -49,7 +49,7 @@
  <br>
 </div>
 
- <div class="roundend">
+ <div id="roundend" class="roundend">
  <h4 id="res"> At the end of Round <inline id="round3"></inline>,</h4>
  <h4 id="user"> Your Score: <inline id="userscore"> </inline></h4>
  <h4 id="comp"> Computer' Score: <inline id="compscore"> </inline></h4>
@@ -59,7 +59,8 @@
 
  <div id="final">
  <h3 id="finalresult"> Game over!<br><br><inline id="resultsum"></inline><br><br> Outcome of the <inline id="round4"></inline> round game is : <inline id="overallresult"></inline> </h3>
- </div>
+ <button id="startover" onclick="startover();"> Start Over </button> 
+</div>
  
  <script src="game.js"></script>
 

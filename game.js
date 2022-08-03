@@ -8,23 +8,23 @@ document.getElementById('round4').innerText=round;
 document.getElementById('round5').innerText=round;
 
 function runonce(){
+    let row2 = document.getElementById('row2');
+    row2.style.display="flex";
+
+    let roundend = document.getElementById('roundend');
+    roundend.style.display="flex";
+
     document.getElementById('runonce').innerText = "Shoot for Round " + (round+1);
     document.getElementById('endgame').innerText = "End Game"
 
-    console.log("Round number is :"+round);
-    
     let userchoice = document.querySelector('input[type=radio][name=userradio]:checked').value;
-    console.log("User chopice is: "+userchoice);
-    
     let computchoice = compchoice();
-    console.log("Computer choice is: " + computchoice);
+ 
     
     document.getElementById('userchoice').innerText=userchoice;
     document.getElementById('computerchoice').innerText=computchoice;
         
     document.getElementById('result').innerText=getresult(userchoice,computchoice);
-    console.log("User Score is "+userscore);
-    console.log("Computer Score is "+compscore);
     document.getElementById('userscore').innerText=userscore;
     document.getElementById('compscore').innerText=compscore;
 
@@ -50,8 +50,28 @@ function startover(){
     round=1;
     compscore = 0;
     userscore = 0;
+    userchoice="";
+    computchoice="";
     let final = document.getElementById('final');
     final.style.display="none";
+
+    let row2 = document.getElementById('row2');
+    row2.style.display="none";
+
+    let roundend = document.getElementById('roundend');
+    roundend.style.display="none";
+
+    document.getElementById('round1').innerText=round;
+    document.getElementById('round2').innerText=round;
+    document.getElementById('round3').innerText=round;
+    document.getElementById('round4').innerText=round;
+    document.getElementById('round5').innerText=round;
+    document.getElementById('runonce').innerText = "Shoot for Round " + (round);
+    document.getElementById('userscore').innerText=userscore;
+    document.getElementById('compscore').innerText=compscore;
+    document.getElementById('userchoice').innerText=userchoice;
+    document.getElementById('computerchoice').innerText=computchoice;
+
 }
 
 
@@ -126,4 +146,5 @@ else {
 }
 let final = document.getElementById('final');
 final.style.display="flex";
+final.scrollIntoView();
 };
